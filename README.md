@@ -24,3 +24,8 @@ SmartSense Agriculture Price Prediction
 - go into the src folder and type uvicorn main:app --reload
 - now open the link and go to some link for example:  http://127.0.0.1:8000/make_prediction/?commodity=commodity_name&APMC=APMC_name&date=date
 - otherwise you can use the saved model to make inference
+
+## Result:
+
+- Did a train test split of 80:20
+- Got an MAE of 699.2
