@@ -1,8 +1,18 @@
 from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 import pandas as pd
 import pickle
 
+
+# Initialize the backend app and allow CORS
 app = FastAPI()
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:3000"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 # Now we load the model and label encoder
 model = pickle.load(open('D:\ML-5\saved\model.pkl', 'rb'))

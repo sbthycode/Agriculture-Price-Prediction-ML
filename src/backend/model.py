@@ -49,7 +49,7 @@ print('Mean absolute error: ', mae)
 
 
 # We save the model and label encoder using pickle
-# pickle.dump(model, open('D:\ML-5\saved\model.pkl', 'wb'))
-# pickle.dump(le1, open('D:\ML-5\saved\label_encoder_apmc.pkl', 'wb'))
-# pickle.dump(le2, open('D:\ML-5\saved\label_encoder_commodity.pkl', 'wb'))
+pickle.dump(model, open('D:\ML-5\saved\model.pkl', 'wb'))
+pickle.dump(le1, open('D:\ML-5\saved\label_encoder_apmc.pkl', 'wb'))
+pickle.dump(le2, open('D:\ML-5\saved\label_encoder_commodity.pkl', 'wb'))
 print('Model and label encoders saved successfully')
