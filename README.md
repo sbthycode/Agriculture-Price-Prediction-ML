@@ -1,6 +1,4 @@
-# ML-5
-SmartSense Agriculture Price Prediction
-
+# Agriculture Price Prediction using Machine Learning
 
 
 ## File structure
@@ -27,5 +25,4 @@ SmartSense Agriculture Price Prediction
 
 ## Result:
 
-- Did a train test split of 80:20
-- Got an MAE of 699.2
+- Got an MAE of 699.2 on the Modal Price based on given features.
