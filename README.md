@@ -12,17 +12,23 @@
 
 1. Identified the contributing factors to the price of every commodity, removed redundant data and removed the outliers in the data.
 2. Used an pipiline consisting of Random Forest Regressor and a polinomial regressor.
-3. Used FASTAPI for user side of the model.
+3. Used FASTAPI to prepare the model endpoint.
+4. Developed a Frontend for the user.
 
 ## How to run?
 
 - Pull the code base
-- Make sure you have the standard ML libraries(sklear, pandas) installed.
-- Install the fastapi library.
-- go into the src folder and type uvicorn main:app --reload
-- now open the link and go to some link for example:  http://127.0.0.1:8000/make_prediction/?commodity=commodity_name&APMC=APMC_name&date=date
-- otherwise you can use the saved model to make inference
+- Create a conda environment 
+- Install the fastapi library
+- Make sure you have the standard ML libraries(sklearn, pandas) installed.
+- go into src/backend folder and type uvicorn main:app --reload
+- now open the link and go to some link for example to make sure the endpoint works:  http://127.0.0.1:8000/make_prediction/?commodity=commodity_name&APMC=APMC_name&date=date&arrival=arrival (fill accordingly)
+- For the frontend:
+    - go to src/frontend
+    - run ``` npm install ```
+    - run ```  node server.js  ```     
+    - go to the server location, and you're good to go!
 
 ## Result:
 
-- Got an MAE of 699.2 on the Modal Price based on given features.
+- Got an MAE of 552 on the Modal Price based on given features.
