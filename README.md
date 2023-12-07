@@ -21,10 +21,10 @@
 - Create a conda environment 
 - Install the fastapi library
 - Make sure you have the standard ML libraries(sklearn, pandas) installed.
-- go into the src folder and type uvicorn main:app --reload
+- go into src/backend folder and type uvicorn main:app --reload
 - now open the link and go to some link for example to make sure the endpoint works:  http://127.0.0.1:8000/make_prediction/?commodity=commodity_name&APMC=APMC_name&date=date&arrival=arrival (fill accordingly)
 - For the frontend:
-    - go to src/backend
+    - go to src/frontend
     - run ``` npm install ```
     - run ```  node server.js  ```     
     - go to the server location, and you're good to go!
